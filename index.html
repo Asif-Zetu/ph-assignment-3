@@ -52,7 +52,7 @@
     </style>
   </head>
   <body>
-    <header class="bg-[rgb(255,249,244)] font-sora">
+    <header class="bg-[rgb(255,249,244)] font-sora lg:mb-20">
       <!-- ! nav container -->
       <nav class="container mx-auto border-b border-[#111111] lg:border-none">
         <!-- ! navbar -->
@@ -108,7 +108,42 @@
         </div>
       </nav>
     </header>
-    <main></main>
+    <main>
+      <!-- ! hero section -->
+      <section class="container mx-auto m-5">
+        <div
+          class="lg:h-[750px]"
+          style="
+            background-image: url('c1-assets/cat-big.png');
+            background-repeat: no-repeat;
+          "
+        >
+          <div class="flex justify-start">
+            <div class="hero-content">
+              <div class="max-w-[590px]">
+                <h1
+                  class="mb-5 text-3xl lg:text-5xl lg:leading-snug text-black font-normal font-adlam"
+                >
+                  Pamper Your Pet, Because They Deserve the Best
+                </h1>
+                <p class="mb-5 font-sora text-gray-500 lg:text-[18px]">
+                  Discover a world of treats, toys, and essentials handpicked
+                  for your furry friends. Shop now and make tails wag with joy!
+                </p>
+                <button class="btn bg-btn-primary border-none font-sora px-7">
+                  Find a pet
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <img
+          class="inline lg:hidden -mt-28"
+          src="c1-assets/cat-big.png"
+          alt=""
+        />
+      </section>
+    </main>
     <footer></footer>
   </body>
 </html>
