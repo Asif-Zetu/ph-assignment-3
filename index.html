@@ -54,10 +54,23 @@
   <body>
     <header class="bg-[rgb(255,249,244)] font-sora">
       <!-- ! nav container -->
-      <nav class="container mx-auto">
+      <nav class="container mx-auto border-b border-[#111111] lg:border-none">
         <!-- ! navbar -->
         <div class="navbar bg-[rgb(255,249,244)]">
           <div class="navbar-start">
+            <img class="ml-2 lg:mr-3" src="c1-assets/logo-header.png" alt="" />
+            <a class="text-2xl sm:block hidden"
+              >Browse<span class="text-[rgb(255,220,38)]">4</span>Pets</a
+            >
+          </div>
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1">
+              <li><a class="text-lg">Find a pet</a></li>
+              <li><a class="text-lg">Breeds</a></li>
+              <li><a class="text-lg">Contact us</a></li>
+            </ul>
+          </div>
+          <div class="navbar-end">
             <div class="dropdown">
               <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
                 <svg
@@ -75,37 +88,22 @@
                   />
                 </svg>
               </div>
-              <ul
-                tabindex="0"
-                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
-              >
-                <li><a>Find a pet</a></li>
-                <li><a>Breeds</a></li>
-                <li><a>Contact us</a></li>
-              </ul>
             </div>
-            <img class="mr-3" src="c1-assets/logo-header.png" alt="" />
-            <a class="text-2xl"
-              >Browse<span class="text-[rgb(255,220,38)]">4</span>Pets</a
-            >
-          </div>
-          <div class="navbar-center hidden lg:flex">
-            <ul class="menu menu-horizontal px-1">
-              <li><a class="text-lg">Find a pet</a></li>
-              <li><a class="text-lg">Breeds</a></li>
-              <li><a class="text-lg">Contact us</a></li>
-            </ul>
-          </div>
-          <div class="navbar-end">
-            <i class="fa-regular fa-bell mr-4 text-2xl"></i>
-            <i class="fa-solid fa-magnifying-glass mr-4 text-2xl"></i>
-            <a
-              class="btn bg-transparent border-[#FFDC26] mr-2 px-7 text-lg font-normal"
-              >Login</a
-            >
-            <a class="btn bg-btn-primary border-none px-7 text-lg font-normal"
-              >Register</a
-            >
+            <i
+              class="fa-regular fa-bell mr-4 text-2xl hidden lg:inline-block"
+            ></i>
+            <i
+              class="fa-solid fa-magnifying-glass mr-4 text-2xl hidden lg:inline-block"
+            ></i>
+            <div class="hidden lg:inline-flex">
+              <a
+                class="btn bg-transparent border-[#FFDC26] mr-2 px-7 text-lg font-normal"
+                >Login</a
+              >
+              <a class="btn bg-btn-primary border-none px-7 text-lg font-normal"
+                >Register</a
+              >
+            </div>
           </div>
         </div>
       </nav>
